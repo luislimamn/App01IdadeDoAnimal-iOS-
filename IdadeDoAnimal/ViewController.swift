@@ -9,10 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var legendaResultado: UILabel!
+    @IBOutlet weak var campoIdadeAnimal: UITextField!
+    @IBAction func descobrirIdade(_ sender: Any) {
+        
+        //legendaResultado.text = "Texto Alterado"
+        //legendaResultado.text = campoIdadeAnimal.text
+        let idade = Int(campoIdadeAnimal.text!)! * 7
+        legendaResultado.text = "A Idade do Cachorro é: " + String(idade) + " Anos"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Imprime a Mensagem no Log
+        print("App Iniciado")
+        
     }
 
     override func didReceiveMemoryWarning() {
