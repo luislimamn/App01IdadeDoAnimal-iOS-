@@ -14,10 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var campoIdadeAnimal: UITextField!
     @IBAction func descobrirIdade(_ sender: Any) {
         
-        //legendaResultado.text = "Texto Alterado"
-        //legendaResultado.text = campoIdadeAnimal.text
-        let idade = Int(campoIdadeAnimal.text!)! * 7
-        legendaResultado.text = "A Idade do Cachorro é: " + String(idade) + " Anos"
+        if(campoIdadeAnimal.text == ""){
+            legendaResultado.text = "Digite uma Idade antes de clicar no Botão"
+        }else{
+            //legendaResultado.text = "Texto Alterado"
+            //legendaResultado.text = campoIdadeAnimal.text
+            let idade = Int(campoIdadeAnimal.text!)! * 7
+            legendaResultado.text = "A Idade do Cachorro é: " + String(idade) + " Anos Humanos"
+        }
+        
+        
     }
     
     override func viewDidLoad() {
