@@ -1,65 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IdadeDoAnimal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-58-F5M">
-                                <rect key="frame" x="16" y="29" width="343" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-58-F5M">
+                                <rect key="frame" x="107" y="54" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ve9-d6-Beb"/>
+                                    <constraint firstAttribute="height" constant="200" id="vGT-64-P3b"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite a idade do seu animal para descobrir em anos humano:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-hQ-WVE">
-                                <rect key="frame" x="16" y="209" width="343" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu animal para descobrir em anos humano:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-hQ-WVE">
+                                <rect key="frame" x="32" y="264" width="350" height="100"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.83529411764705885" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QQF-En-fpq"/>
+                                    <constraint firstAttribute="width" constant="350" id="U1G-lm-1ZU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.19220422486744349" green="0.48351388002569734" blue="0.52276847477491739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a Idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-SK-vCD">
-                                <rect key="frame" x="135" y="295" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a Idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-SK-vCD">
+                                <rect key="frame" x="147" y="374" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4Yl-rQ-1OS"/>
+                                    <constraint firstAttribute="height" constant="40" id="RWn-Hz-ulD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYS-o9-ffI">
-                                <rect key="frame" x="127" y="333" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYS-o9-ffI">
+                                <rect key="frame" x="132" y="424" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.51634794470000001" green="0.86265057329999995" blue="0.92622417209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="51c-ZJ-RkD"/>
+                                    <constraint firstAttribute="width" constant="150" id="z30-nM-dZd"/>
+                                </constraints>
                                 <state key="normal" title="Descobrir a Idade"/>
                                 <connections>
                                     <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2TC-Us-hxw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-qD-rro">
-                                <rect key="frame" x="16" y="371" width="355" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-qD-rro">
+                                <rect key="frame" x="32" y="474" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="bqf-vX-cUR"/>
+                                    <constraint firstAttribute="height" constant="50" id="nMj-gJ-YPO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.25490196078431371" green="0.79607843137254897" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.25490196078431371" green="0.79607843137254897" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ip9-SK-vCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EPw-OJ-5Pq"/>
+                            <constraint firstItem="bYS-o9-ffI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLq-H2-EMA"/>
+                            <constraint firstItem="bYS-o9-ffI" firstAttribute="top" secondItem="Ip9-SK-vCD" secondAttribute="bottom" constant="10" id="JZ4-2F-9qI"/>
+                            <constraint firstItem="nx5-58-F5M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OPK-dC-Jx6"/>
+                            <constraint firstItem="PEq-qD-rro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j95-GA-Xup"/>
+                            <constraint firstItem="PEq-qD-rro" firstAttribute="top" secondItem="bYS-o9-ffI" secondAttribute="bottom" constant="10" id="jos-VK-8i2"/>
+                            <constraint firstItem="fJP-hQ-WVE" firstAttribute="top" secondItem="nx5-58-F5M" secondAttribute="bottom" constant="10" id="oHM-NV-svF"/>
+                            <constraint firstItem="fJP-hQ-WVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q36-bU-8rs"/>
+                            <constraint firstItem="Ip9-SK-vCD" firstAttribute="top" secondItem="fJP-hQ-WVE" secondAttribute="bottom" constant="10" id="rcm-x2-I01"/>
+                            <constraint firstItem="nx5-58-F5M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="srq-Jp-p5w"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="campoIdadeAnimal" destination="Ip9-SK-vCD" id="aJk-JH-Zqx"/>
@@ -72,6 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cachorro.png" width="421" height="404"/>
+        <image name="cachorro" width="140.33332824707031" height="134.66667175292969"/>
     </resources>
 </document>
