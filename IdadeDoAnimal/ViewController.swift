@@ -21,6 +21,7 @@ class ViewController: UIViewController {
             //legendaResultado.text = campoIdadeAnimal.text
             let idade = Int(campoIdadeAnimal.text!)! * 7
             legendaResultado.text = "A Idade do Cachorro é: " + String(idade) + " Anos Humanos"
+            view.endEditing(true)
         }
         
         
